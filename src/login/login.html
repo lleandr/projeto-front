@@ -6,22 +6,32 @@
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
-<body>
+<body>s
     <header>
-        
+        <img src="../images/logo-separada.png" alt="uniMDB"> 
     </header>
 
     <main>
         <form action="#" method="get">
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" required><br>
-        <label for="senha">Senha</label><br>
-        <input type="password" name="senha" id="senha" required><br>
-        <button type="submit">Login</button><br>
+            <fieldset>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>  
+                <div>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div>
+                    <a href="#">
+                        <button>Registrar-se</button>
+                    </a>
+                </div>    
+            </fieldset>
         </form>
-        <a href="#">
-            <button>Registrar-se</button>
-        </a>
     </main>
 </body>
 </html>
