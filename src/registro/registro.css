@@ -16,7 +16,6 @@
 header{
     background-color: #e6d8ff;
     text-align: center;
-    position:static;
 }
 
 img{
@@ -25,6 +24,7 @@ img{
 
 body{
     background-color: #ab82ff;
+    height: 100vh; 
 }
 
 .container {
