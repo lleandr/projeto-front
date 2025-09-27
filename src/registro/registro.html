@@ -12,31 +12,33 @@
     </header>
 
     <main>
-        <form action="#" method="get">
-            <div>
-                <label for="nome">Username</label><br>
-                <input type="text" name="nome" id="nome" required>
+        <div class="container">
+            <form action="#" method="get">
+                <div class="box">
+                    <label for="nome">Username</label><br>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="box">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>  
+                <div class="box">
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <div class="box">
+                    <label for="confSenha">Confirme a senha</label><br>
+                    <input type="password" name="confSenha" id="confSenha" required>
+                </div>
+                <div class="botao">
+                    <button>Registrar-se</button>
+                </div>    
+            </form>
+            <div class="botao">
+                <a href="../login/login.html">
+                <button type="submit">Possuo cadastro</button>
+                </a>
             </div>
-            <div>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required>
-            </div>  
-            <div>
-                <label for="senha">Senha</label><br>
-                <input type="password" name="senha" id="senha" required>
-            </div>
-            <div>
-                <label for="confSenha">Confirme a senha</label><br>
-                <input type="password" name="confSenha" id="confSenha" required>
-            </div>
-            <div>
-                <button>Registrar-se</button>
-            </div>    
-        </form>
-        <div>
-            <a href="../login/login.html">
-            <button type="submit">Possuo cadastro</button>
-            </a>
         </div>
     </main>
 </body>
