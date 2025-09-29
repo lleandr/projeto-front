@@ -38,11 +38,11 @@ body{
     display: fixed;
     flex-direction: column;
     align-items: center;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 8px;
 }
 
-.botao, button{
+button{
     padding: 5px;
     margin-top: 2%;
     font-family: "Press Start 2P", system-ui;
@@ -50,8 +50,6 @@ body{
     background: none;
     cursor: pointer;
     border-radius: 8px;
-    
-    
 }
 
 input{
@@ -61,4 +59,3 @@ input{
     margin-top: 5px;
     margin-bottom: 3px;
 }
-
