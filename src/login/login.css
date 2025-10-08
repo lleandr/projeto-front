@@ -16,49 +16,104 @@
 header{
     background-color: #e6d8ff;
     text-align: center;
+    width: 100%; /* 🔧 garante que o header ocupe toda a largura */
+    padding: 10px 0; /* 🔧 adiciona espaçamento interno */
 }
 
 img{
-    width: 125px;
+    width: 120px;
+    height: auto;
 }
 
 body{
+    background-image: url('../images/fundo.png');
     background-color: #ab82ff;
+    backdrop-filter:blur(3px);
+    background-position: center;
     height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui; /* 🔧 fonte aplicada direto no body */
+
 }
+
 
 .container {
     font-family: "Press Start 2P", system-ui;
     background-color: #e6d8ff;
     text-align: center;
     margin: 10% auto 0 auto;
-    width: 20%;
+    width: 90%;          
     padding: 20px;
-    display: fixed;
+    display: flex;
     flex-direction: column;
     align-items: center;
     border: 3px solid black;
     border-radius: 8px;
+
 }
 
 button{
-    padding: 5px;
-    margin-top: 2%;
+    padding: 15px;
+    margin-top: 15px;
     font-family: "Press Start 2P", system-ui;
-    background-color: #cbafff ;
-    background: none;
+    background-color: #cbafff;
     cursor: pointer;
     border-radius: 8px;
     border: 2px solid #000000;
+}
+
+button:hover {
+  background-color: #b48eff;
 }
 
 
 
 input{
     background: #e6d8ff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 8px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 3px;
     border: 2px solid #000000;
+    width: 100%;
 }
+
+@media (max-width: 768px) {
+  body {
+    backdrop-filter: blur(6px); /* 🔧 aumenta leve o blur pra telas pequenas */
+  }
+
+  .container {
+    width: 85%;
+    margin-top: 20%;
+    padding: 15px;
+  }
+
+  button, input {
+    font-size: 12px; /* 🔧 texto mais ajustado */
+  }
+
+  img {
+    width: 100px; /* 🔧 imagem menor */
+  }
+}
+
+/* Celulares menores */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin-top: 25%;
+  }
+
+  button, input {
+    font-size: 10px; /* 🔧 ainda menor em telas pequenas */
+    padding: 8px;
+  }
+
+  img {
+    width: 80px;
+  }
+}
+
