@@ -65,3 +65,26 @@ input::placeholder {
   font-family: "Press Start 2P", system-ui;
 }
 
+label{
+ 
+  font-family: "Press Start 2P", system-ui;
+  color: #5b3992;
+}
+
+#content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+}
+
+#content img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#content img:hover {
+  transform: scale(1.05);
+}
