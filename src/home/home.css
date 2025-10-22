@@ -83,6 +83,7 @@ label{
   width: 150px;
   height: auto;
   transition: transform 0.3s ease;
+  border: 3px solid #5b3992;
 }
 
 #content img:hover {
