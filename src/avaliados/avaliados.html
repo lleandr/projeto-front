@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="avaliados.css">
-    <title>Avaliações</title>
-</head>
-<body>
-    <header>
-        <a href="../home/home.html" class="logo btn">
-            <img src="../images/logo-separada.png" alt="uniMDB">
-        </a>
-        <a href="../avaliados/avaliados.html" class="nav-link">Avaliados</a>
-        <a href="../favoritos/favoritos.html" class="nav-link">Favoritos</a>
-        <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-    </header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliações</title>
 
-    <main>
-        
-    </main>
+  <link rel="stylesheet" href="avaliados.css">
+</head>
+
+<body>
+
+  <main>
+    <button id="btnAvaliar">Avaliar</button>
+
+    <div id="modal" class="modal">
+      <div class="container">
+
+        <!-- IMAGEM DO FUNDO -->
+        <img src="/src/images/fundo.png" class="fundo">
+
+        <!-- FECHAR -->
+        <span id="fechar" class="close">&times;</span>
+
+        <!-- TÍTULO -->
+        <div class="titulo" id="tituloFilme">Predador: Terras Selvagens</div>
+
+        <!-- ESTRELAS -->
+        <div class="estrelas" id="estrelas"></div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="avaliados.js"></script>
 </body>
 </html>
