@@ -6,8 +6,9 @@
 
 /* BOTÃO */
 #btnAvaliar {
-  margin: 20px;
-  padding: 12px 22px;
+  display: flex;
+  margin: 200px;
+  padding: 5px 30px;
   border: none;
   border-radius: 6px;
   background: #222;
@@ -32,44 +33,60 @@
 .container {
   position: relative;
   max-width: 400px;
+  background: rgba(0, 0, 0, 0.8); /* adiciona fundo escuro para contraste */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* organiza tudo em coluna */
+  align-items: center;    /* centraliza horizontalmente */
+  gap: 20px;              /* espaço entre os elementos */
 }
 
 .fundo {
-  width: 100%;
-  border-radius: 10px;
+  display: none; /* se quiser esconder a imagem de fundo, remova esta linha */
 }
 
-/* FECHAR */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
-
-/* TÍTULO */
 .titulo {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
 
-/* ESTRELAS */
 .estrelas {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  gap: 4px;
+  justify-content: center;
+  gap: 6px;
   font-size: 26px;
+}
+
+.avaliacao-texto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+}
+
+button.submit {
+  background-color: #ab82ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button.submit:hover {
+  background-color: #ab82ff;
 }
 
 .star {
@@ -79,5 +96,5 @@
 }
 
 .star.selecionada {
-  color: gold;
+  color: #ab82ff;
 }
